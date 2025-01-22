@@ -1,0 +1,2 @@
+-- code executed after attach.
+print('test')
