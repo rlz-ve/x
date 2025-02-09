@@ -1,6 +1,6 @@
 -- Tested in 'a literal baseplate.'
 for _, Module in GetUnlockedModules() do
-	LockModule(Module)
+	LockModule(Module) -- Can still be called after Xeno has restarted due to cache system
 end
 
 local TargetScript = game.ReplicatedStorage.Icon
