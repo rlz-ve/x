@@ -21,7 +21,7 @@ end
 
 print(getrenv().require(TargetScript))
 
---[[
+--[[ -- Require handler
 function Xeno.require(moduleScript: Instance, unlockSiblingsAndDescendants: boolean?): {}
 	assert(typeof(moduleScript) == "Instance", "Attempted to call require with invalid argument(s). ", 3)
 	assert(moduleScript.ClassName == "ModuleScript", "Attempted to call require with invalid argument(s). ", 3)
@@ -42,11 +42,11 @@ function Xeno.require(moduleScript: Instance, unlockSiblingsAndDescendants: bool
 	end
 	
 	if UnlockedModules[moduleScript] then
-		return renv.require(moduleScript)
+		return getrenv().require(moduleScript)
 	end
 	
 	UnlockModule(moduleScript)
 	
-	return renv.require(moduleScript)
+	return getrenv().require(moduleScript)
 end
 ]]
