@@ -7,7 +7,7 @@ local targetScript = game.Players.LocalPlayer.PlayerScripts.LocalScript
 
 print("Original Bytecode:", cStr(getscriptbytecode(targetScript)))
 
-setscriptbytecode(targetScript, Compile("print('Hello, World!')"))
+setscriptbytecode(targetScript, "print(\"Hello, World!\")")
 
 print("New Bytecode:", cStr(getscriptbytecode(targetScript)))
 
