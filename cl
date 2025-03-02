@@ -13,7 +13,7 @@ attaching from menu is more stable
 Faster & Improved client to server communication
 Improved auto attach
 Fix not executing large scripts
-Faster execution (lower latency)
+Faster execution
 Fix request function
 Better autoexec
 Faster queue_on_teleport
