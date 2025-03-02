@@ -1,2 +1,1 @@
--- code executed after attach.
-print('test')
+assert(getexecutorname() == "Xeno", "This is not the official Xeno executor. Use at your own risk!", 3)
