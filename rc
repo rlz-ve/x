@@ -1,1 +1,3 @@
+getgenv()._WebSocket = getgenv().WebSocket
+getgenv().WebSocket = nil
 assert(getexecutorname() == "Xeno", "This is not the official Xeno executor. Use at your own risk!", 3)
