@@ -1,4 +1,4 @@
-if about.Hash ~= "25e5857fd24b345f361b31340595df9cd6b893227158f2da9a294e2778fab7c0" then -- silent updates
+if about.Hash ~= "25e5857fd24b345f361b31340595df9cd6b893227158f2da9a294e2778fab7c0" then
 	getgenv()._WebSocket = getgenv().WebSocket
   	getgenv().WebSocket = nil
 end
